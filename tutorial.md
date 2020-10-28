@@ -62,7 +62,7 @@ FLASK_APP=deepgram.py flask run
 
 You should see something like `Running on http://localhost:5000/` in your terminal. And if you visit the link in your browser, you'll see a page that says "Audio Transcripts".
 
-###Configure parameters
+### Configure parameters
 
 Now we need to configure the parameters we for the SpeechEngine API.
 
@@ -143,7 +143,7 @@ If a requested model and language combination doesn't exist, the request will fa
 
 To learn about more parameters, see [SpeechEngine API Reference](https://docs.deepgram.com/).
 
-###Call SpeechEngine API
+### Call SpeechEngine API
 
 Now that we have configured our desired parameters, we will call the API and pass the response to `index.html`. To do so, modify `transcribe_audio.py` as follows:
 
@@ -188,7 +188,7 @@ To handle the parameters being passed, we'll also modify `index.html`:
 
 When you refresh your browser, you should see the response object in [JSON format](/def).
 
-###Build transcript
+### Build transcript
 
 Now that we have the response from the server, let's add some formatting to build a more useful display in our browser.
 
@@ -327,7 +327,7 @@ Finally, to handle these new functions, we'll modify `index.html`. To handle the
 
 When you refresh your browser, you should see the following:
 
-![Sample Audio Transcript](/images/sample-audio-transcript.png)
+![Sample Audio Transcript](sample-audio-transcript.png)
 
 ## Keep reading
 
