@@ -121,16 +121,10 @@ params = {
 
 #### Parameters
 
-| Parameter Name  | Default | Description |
+| Name            | Default | Description |
 |-----------------|---------|-------------|
-| `model`    | `general` | AI model used to process uploaded audio. Standard Deepgram models include:<ul><li>general: a good, general-purpose model for everyday audio processing. If you aren't sure what model to select, start with this one.</li><li>phonecall: optimized for low-bandwidth audio phone calls.</li><li>meeting: optimized for conference room settings: multiple speakers with a single microphone.</li></ul><br><br>You may also use a custom model associated with your account by including its `version_id`. |
-| `language` | `en-US` | `BCP-47` language tag that hints at the primary spoken language. Language support is currently optimized for the following languages:
-* English (`en-US`, `en-GB`, `en-NZ`)
-* Spanish (`es`)
-* Korean (`ko`)
-* French (`fr`)
-* Portuguese (`pt`, `pt-BR`)
-* Russian (`ru`)
+| `model`    | `general` | AI model used to process uploaded audio. Standard Deepgram models include:<ul><li>general: a good, general-purpose model for everyday audio processing. If you aren't sure what model to select, start with this one.</li><li>phonecall: optimized for low-bandwidth audio phone calls.</li><li>meeting: optimized for conference room settings: multiple speakers with a single microphone.</li></ul>You may also use a custom model associated with your account by including its `version_id`. |
+| `language` | `en-US` | `BCP-47` language tag that hints at the primary spoken language. Language support is currently optimized for the following languages:<ul><li>English (<code>en-US</code>, <code>en-GB</code>, <code>en-NZ</code>)</li><li>Spanish (<code>es</code>)</li><li>Korean (<code>ko</code>)</li><li>French (<code>fr</code>)</li><li>Portuguese (<code>pt</code>, <code>pt-BR/code>)</li><li>Russian (<code>ru</code>)</li></ul>
 If a requested model and language combination doesn't exist, the request will fail.(?) |
 | `diarize`     | `false` | Indicates whether to recognize speaker changes. If `true`, each word in the transcript will be assigned a speaker number starting at 0. |
 | `punctuate` | `false` | Indicates whether to add punctuation to the transcript. |
