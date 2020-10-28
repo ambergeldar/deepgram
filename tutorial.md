@@ -121,14 +121,16 @@ params = {
 
 #### Parameters
 
+In this example, we use the following parameters. To explore all of the parameters the SpeechEngine API accepts, see [SpeechEngine API Reference](https://docs.deepgram.com/).
+
 | Name            | Default | Description |
 |-----------------|---------|-------------|
-| `model`    | `general` | AI model used to process uploaded audio. Standard Deepgram models include:<ul><li>general: a good, general-purpose model for everyday audio processing. If you aren't sure what model to select, start with this one.</li><li>phonecall: optimized for low-bandwidth audio phone calls.</li><li>meeting: optimized for conference room settings: multiple speakers with a single microphone.</li></ul>You may also use a custom model associated with your account by including its `version_id`. |
+| `model`    | `general` | AI model used to process uploaded audio. Standard Deepgram models include:<ul><li>general: a good, general-purpose model for everyday audio processing. If you aren't sure what model to select, start with this one.</li><li>phonecall: optimized for low-bandwidth audio phone calls.</li><li>meeting: optimized for conference room settings: multiple speakers with a single microphone.</li></ul>You may also use a custom model associated with your account by including its `version_id`.<br><br>Can be set to multiple values when the `multichannel` parameter is set to `true`. In this case, you can apply different models to separate audio channels (e.g., set `model` to `general:phonecall`, which applies the `general` model to channel 0 and the `phonecall` model to channel 1). |
 | `language` | `en-US` | `BCP-47` language tag that hints at the primary spoken language. Language support is currently optimized for the following languages:<ul><li>English (<code>en-US</code>, <code>en-GB</code>, <code>en-NZ</code>)</li><li>Spanish (<code>es</code>)</li><li>Korean (<code>ko</code>)</li><li>French (<code>fr</code>)</li><li>Portuguese (<code>pt</code>, <code>pt-BR/code>)</li><li>Russian (<code>ru</code>)</li></ul>If a requested model and language combination doesn't exist, the request will fail.(?) |
 | `diarize`     | `false` | Indicates whether to recognize speaker changes. If `true`, each word in the transcript will be assigned a speaker number starting at 0. |
 | `punctuate` | `false` | Indicates whether to add punctuation to the transcript. |
-
-To learn about more parameters, see [SpeechEngine API Reference](https://docs.deepgram.com/).
+| `multichannel` | `false` | Indicates whether to isolate speakers on independent audio channels. When set to `true`, you will receive one transcript for each channel, which means you can apply a different model to each channel using the `model` parameter (e.g., set `model` to `general:phonecall`, which applies the `general` model to channel 0 and the `phonecall` model to channel 1).<br><br>Must be set to `true` when the `uttseg` parameter is set to `true`. |
+| `uttseg` | `false` | Indicates whether to include . When set to `true`, the `multichannel` parameter must also be set to `true`.  |
 
 ### Call SpeechEngine API
 
