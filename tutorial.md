@@ -83,8 +83,8 @@ To authenticate, we'll use Basic Authentication (over HTTPS), using our Deepgram
 ```
 ...
 # set Authorization header
-username = 'rachel.khoriander@gmail.com'
-password = 'eg@d45rkDG'
+username = 'YOUR_USERNAME'
+password = 'YOUR_PASSWORD'
 headers = { 'Authorization': 'Basic {0}'.format(base64.b64encode('{}:{}'.format(username, password).encode('utf-8')).decode('utf-8')) }
 ...
 ```
@@ -124,11 +124,9 @@ params = {
 | Parameter Name  | Default | Description |
 |-----------------|---------|-------------|
 | `model`    | `general` | AI model used to process uploaded audio. Standard Deepgram models include:
-general: a good, general-purpose model for everyday audio processing. If you aren't sure what model to select, start with this one.
-phonecall: optimized for low-bandwidth audio phone calls.
-meeting: optimized for conference room settings: multiple speakers with a single microphone.
-
-You may also use a custom model associated with your account by including its `version_id`. |
+* general: a good, general-purpose model for everyday audio processing. If you aren't sure what model to select, start with this one.
+* phonecall: optimized for low-bandwidth audio phone calls.
+* meeting: optimized for conference room settings: multiple speakers with a single microphone.<br><br>You may also use a custom model associated with your account by including its `version_id`. |
 | `language` | `en-US` | `BCP-47` language tag that hints at the primary spoken language. Language support is currently optimized for the following languages:
 * English (`en-US`, `en-GB`, `en-NZ`)
 * Spanish (`es`)
@@ -136,7 +134,6 @@ You may also use a custom model associated with your account by including its `v
 * French (`fr`)
 * Portuguese (`pt`, `pt-BR`)
 * Russian (`ru`)
-
 If a requested model and language combination doesn't exist, the request will fail.(?) |
 | `diarize`     | `false` | Indicates whether to recognize speaker changes. If `true`, each word in the transcript will be assigned a speaker number starting at 0. |
 | `punctuate` | `false` | Indicates whether to add punctuation to the transcript. |
