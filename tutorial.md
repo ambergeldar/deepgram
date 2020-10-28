@@ -123,8 +123,7 @@ params = {
 
 | Parameter Name  | Default | Description |
 |-----------------|---------|-------------|
-| `model`    | `general` | AI model used to process uploaded audio. Standard Deepgram models include:<ul><li>general: a good, general-purpose model for everyday audio processing. If you aren't sure what model to select, start with this one.</li><li>phonecall: optimized for low-bandwidth audio phone calls.</li>
-<li>meeting: optimized for conference room settings: multiple speakers with a single microphone.</li></ul><br><br>You may also use a custom model associated with your account by including its `version_id`. |
+| `model`    | `general` | AI model used to process uploaded audio. Standard Deepgram models include:<ul><li>general: a good, general-purpose model for everyday audio processing. If you aren't sure what model to select, start with this one.</li><li>phonecall: optimized for low-bandwidth audio phone calls.</li><li>meeting: optimized for conference room settings: multiple speakers with a single microphone.</li></ul><br><br>You may also use a custom model associated with your account by including its `version_id`. |
 | `language` | `en-US` | `BCP-47` language tag that hints at the primary spoken language. Language support is currently optimized for the following languages:
 * English (`en-US`, `en-GB`, `en-NZ`)
 * Spanish (`es`)
