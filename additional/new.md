@@ -1,5 +1,7 @@
 # New Content
 
+You've reached this page because a piece of content doesn't yet exist.
+
 Creating a good set of carefully separated content by content type allows you to avoid duplication, which makes docs easier to maintain and review (and helps focus time on areas that are more important to expanding the business) and keeps you from accumulating technical debt. Additionally, when separated appropriately, content can be reused as building blocks to create large, more complex docs.
 
 ## Content types
