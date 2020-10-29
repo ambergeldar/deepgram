@@ -1,3 +1,16 @@
+Note: Tutorial efficacy is often enhanced by design. Widgets should exist to enhance these tutorials. For example:
+
+* A section at the top that provides at-a-glance information for readers, including a short description of the purpose, an expected skill level, estimated time to complete, links to code samples, and potentially a last review date or freshness indicator (as long as the review process is robust).
+* A "Steps" widget that floats alongside and can be collapsed or expanded so it doesn't interfere with content that allows readers to see and navigate to any section of the tutorial at any time.
+
+Additional design items that can be used across all content types include:
+
+* Accordions and tabs to allow reusable content to be embedded and different methods of performing a task (for instance, through code or through dashboard) to be presented with minimal screen real estate.
+* Automated product screenshots, so content is easier to maintain, internal communication of changes is less reliant on process, and triggers for documentation review are automated.
+* Code translators to take HAR snippets and translate to cURL and various programming languages.
+* If users are logged in, automatically-populated variables in code samples.
+* Feedback widgets on pages and individual code samples, so we can track CSAT scores.
+
 # Transcribe a Recording
 
 Deepgram uses state-of-the-art speech recognition technology and cutting-edge model training to live transcribe your recordings. Our SpeechEngine API gives you streamlined access to automatic transcription for audio in nearly every format available.
