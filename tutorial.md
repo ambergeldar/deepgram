@@ -178,7 +178,7 @@ To handle the parameters being passed, we'll also modify `index.html`:
 ...
 ```
 
-When you refresh your browser, you should see the response object in [JSON format](/def).
+When you refresh your browser, you should see the response object in [JSON format](/other/def.md).
 
 ### Build transcript
 
