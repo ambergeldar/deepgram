@@ -1,4 +1,4 @@
-# Glossary definition
+# Glossary
 
 We should create a centralized glossary of terminology, so we aren't duplicating content across the site. A centralized glossary also helps keep internal and external product language consistent as a company grows. Additionally, it can be used to integrate documentation into a Dashboard.
 
