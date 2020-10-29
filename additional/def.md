@@ -22,5 +22,5 @@ We should create a centralized glossary of terminology, so we aren't duplicating
   | `title` | Display name of the term being defined. Shows at the top of the definition entry. | 
   | `definition` | Long definition for the term being defined. Used to embed definitions in beginner topics, and also appears at the top of search results. Used in the main glossary, which lists all terms. |
   | `short` | Short definition for the term being defined. Appears in tooltips in intermediate/advanced topics. |
-  | `associated-page` | URL to an internal page with further information, if one exists. If not empty, adds the line "To learn more, see", then looks up the title of the page provided in the URL and provides a link using that Title and the URL. For this example, it would look like: **To learn more, see [Web Application Routes](/other/routes)**. | 
+  | `associated-page` | URL to an internal page with further information, if one exists. If not empty, adds the line "To learn more, see", then looks up the title of the page provided in the URL and provides a link using that Title and the URL. For this example, it would look like: **To learn more, see [Web Application Routes](/routes)**. | 
   
