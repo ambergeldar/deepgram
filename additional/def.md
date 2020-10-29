@@ -18,6 +18,7 @@ We should create a centralized glossary of terminology, so we aren't duplicating
   For each key, the following components should exist:
   
   | Name | Description | 
+  |-|-|
   | `title` | Display name of the term being defined. Shows at the top of the definition entry. | 
   | `definition` | Long definition for the term being defined. Used to embed definitions in beginner topics, and also appears at the top of search results. Used in the main glossary, which lists all terms. |
   | `short` | Short definition for the term being defined. Appears in tooltips in intermediate/advanced topics. |
