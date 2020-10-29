@@ -41,7 +41,7 @@ Let’s break down what’s happening here.
 
 1. We import our Flask and render_template dependency
 2. We create an instance of a Flask application, passing in the name of the application.
-3. We set up a [route](/def) that executes the `get_transcript()` function when the route is visited. The function must return a string or a rendered template, and in this case, we return the `index.html` template.
+3. We set up a [route](/other/def.md) that executes the `get_transcript()` function when the route is visited. The function must return a string or a rendered template, and in this case, we return the `index.html` template.
 
 Now, let's set up our `index.html` template, which is where the user will be redirected when the app is run:
 
