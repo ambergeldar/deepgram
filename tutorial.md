@@ -316,7 +316,7 @@ Finally, to handle these new functions, we'll modify `index.html`. To handle the
 
 When you refresh your browser, you should see the following:
 
-![Sample Audio Transcript](sample-audio-transcript.png)
+![Sample Audio Transcript](/images/sample-audio-transcript.png)
 
 ## Keep reading
 
