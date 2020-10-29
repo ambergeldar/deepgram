@@ -95,7 +95,7 @@ headers = { 'Authorization': 'Basic {0}'.format(base64.b64encode('{}:{}'.format(
 Then we will pass in the URL for the audio file that we want to transcribe. For this example, we'll use the sample file we've already uploaded. However, if you have an audio file you would prefer to use instead, you can post its binary contents instead.
 
 ::: note
-Deepgram supports over 40 audio formats, including the popular WAV, MP3, M4A, FLAC, and Opus. For a full list of supported formats, see [Supported Audio Formats](/link).
+Deepgram supports over 40 audio formats, including the popular WAV, MP3, M4A, FLAC, and Opus. For a full list of supported formats, see [Supported Audio Formats](/other/new-doc.md).
 :::
 
 ```
