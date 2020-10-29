@@ -1,7 +1,10 @@
 # Glossary definition
 
-We should create a centralized glossary of terminology, so we aren't duplicating content across the site when terminology is created. In my mind, the glossary would be a JSON file with entries that look like the following:
+We should create a centralized glossary of terminology, so we aren't duplicating content across the site. A centralized glossary also helps keep internal and external product language consistent as a company grows. Additionally, it can be used to integrate documentation into a Dashboard.
 
+## Format
+
+In my mind, the glossary would be a JSON file with entries that look like the following:
 
 ```
 {
