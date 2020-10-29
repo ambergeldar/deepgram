@@ -12,6 +12,9 @@ Before you begin this guide you’ll need:
 
 * Basic Python knowledge and a local development environment for Python 3. You should be comfortable with Python’s syntax, structure, and some built-in functions.
 * Flask. In this tutorial, we use Flask, a Python microframework, to develop our web application. [Learn how to install Flask](https://flask.palletsprojects.com/en/1.1.x/installation/).
+::: warning 
+Flask uses a simple web server to serve applications in a development environment. This means that the Flask debugger is running to make catching errors easier. Do not use the development server in a production deployment. To learn more about deploying to production, see Flask's [Deployment Options](https://flask.palletsprojects.com/en/1.1.x/deploying/) documentation.
+:::
 * Your Deepgram username and password. If you don't already have these, [sign up for a Deegram account](https://enterprise.deepgram.com/).
 
 ## Steps
